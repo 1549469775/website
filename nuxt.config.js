@@ -18,7 +18,7 @@ module.exports = {
   },
   router: {
     // 相对路径打包
-    base: process.env.NODE_ENV==='production'?'./':'/'
+    base: process.env.NODE_ENV==='production'&&process.env.BASE?process.env.BASE:'/'
   },
   generate:{
     dir:'docs'
