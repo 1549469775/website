@@ -18,7 +18,7 @@ module.exports = {
   },
   router: {
     // 相对路径打包
-    base: './'
+    base: process.env.NODE_ENV==='production'?'./':'/'
   },
   generate:{
     dir:'docs'
@@ -40,6 +40,7 @@ module.exports = {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    '~/plugins/global',
     '~/plugins/axios',
     '~/plugins/global-components'
   ],
