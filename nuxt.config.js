@@ -16,6 +16,8 @@ module.exports = {
       {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'}
     ]
   },
+  // https://www.cnblogs.com/bgwhite/p/9403285.html
+  // https://zh.nuxtjs.org/api/configuration-router#base
   router: {
     // 相对路径打包
     base: process.env.NODE_ENV==='production'&&process.env.BASE?process.env.BASE:'/'
