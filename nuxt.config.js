@@ -16,6 +16,10 @@ module.exports = {
       {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'}
     ]
   },
+  router: {
+    // 相对路径打包
+    base: './'
+  },
   generate:{
     dir:'docs'
   },
