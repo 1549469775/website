@@ -1,5 +1,6 @@
 <template>
    <div class="page">
+       ppp{{data}}
         <div class="dowebok" id="dowebok">
         <div class="form-container sign-up-container">
             <form action="#" v-stopsubmit>
@@ -25,10 +26,10 @@
                     <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
                 </div>
                 <span>或使用您的帐号</span>
-                <input type="email" placeholder="电子邮箱">
-                <input type="password" placeholder="密码">
+                <input type="text" v-model="form.username" placeholder="账号">
+                <input type="password" v-model="form.password" placeholder="密码">
                 <a href="#">忘记密码？</a>
-                <button>登录</button>
+                <button @click="login">登录</button>
             </form>
         </div>
         <div class="overlay-container">
@@ -50,6 +51,28 @@
 </template>
 <script>
 export default {
+    async asyncData({ $axios }) {
+        return {}
+    },
+    data(){
+        return {
+            data:{},
+            form:{
+                username:"",
+                password:""
+            }
+        }
+    },
+    methods:{
+        async login(){
+            try {
+                this.data = await this.$axios.$post('/api/login',this.form) 
+            } catch (error) {
+                this.data = error
+                console.log(error);
+            }
+        }
+    },
     mounted(){
         var signUpButton = document.getElementById('signUp')
         var signInButton = document.getElementById('signIn')

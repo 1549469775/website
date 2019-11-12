@@ -67,7 +67,7 @@ module.exports = {
   },
   proxy: {
     // 跟下面的冲突了
-    // '/api/': 'http://api.example.com'
+    '/api': 'http://47.244.111.211:3303/'
   },
   styleResources: {
     // your settings here
@@ -91,6 +91,6 @@ module.exports = {
     }
   },
   serverMiddleware: [
-    {path:'/api/auth', handler:'~/api/auth'}
+    // {path:'/api/auth', handler:'~/api/auth'}
   ]
 }
