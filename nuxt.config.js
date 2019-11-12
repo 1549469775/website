@@ -63,11 +63,11 @@ module.exports = {
   axios: {
     // proxyHeaders: false
     retry: {retries: 3},
-    proxy: true
+    proxy: process.env.NODE_ENV==='production'?false:true,
+    baseURL:process.env.NODE_ENV==='production'&&process.env.BASE?'http://47.244.111.211:3303':''
   },
   proxy: {
-    // 跟下面的冲突了
-    '/api': 'http://47.244.111.211:3303/'
+    '/api': 'http://47.244.111.211:3303'
   },
   styleResources: {
     // your settings here
