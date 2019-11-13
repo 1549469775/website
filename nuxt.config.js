@@ -78,10 +78,10 @@ module.exports = {
       retries: 3
     },
     proxy: process.env.NODE_ENV === 'production' ? false : true,
-    baseURL: process.env.NODE_ENV === 'production' && process.env.BASE ? 'https://beer.poorman.top:3303' : ''
+    baseURL: process.env.NODE_ENV === 'production' && process.env.BASE ? 'https://beer.poorman.top' : ''
   },
   proxy: {
-    '/api': 'https://beer.poorman.top:3303'
+    '/api': 'https://beer.poorman.top'
   },
   styleResources: {
     // your settings here
