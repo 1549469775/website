@@ -17,6 +17,7 @@
     "autoprefixer": "^9.6.1",
     "bootstrap-vue": "^2.0.0-rc.27",
     "cross-env": "^5.2.0",
+    "echart-tree": "^1.0.4",
     "jquery": "^3.4.1",
     "koa": "^2.6.2",
     "koa-router": "^7.4.0",

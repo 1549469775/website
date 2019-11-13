@@ -40,3 +40,13 @@
  * (c) 2018-present egoist <0x142857@gmail.com>
  * Released under the MIT License.
  */
+
+/*!
+   * ZRender, a high performance 2d drawing library.
+   *
+   * Copyright (c) 2013, Baidu Inc.
+   * All rights reserved.
+   *
+   * LICENSE
+   * https://github.com/ecomfe/zrender/blob/master/LICENSE.txt
+   */

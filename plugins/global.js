@@ -1,9 +1,14 @@
 import Vue from 'vue'
 
-Vue.directive('stopsubmit',{
-    inserted:function(el){
-      el.addEventListener('submit',function(e){
-        e.preventDefault();
-      });
-    }
-  });
+Vue.directive('focus', {
+  inserted: function (el) {
+    el.focus();
+  }
+});
+Vue.directive('stopsubmit', {
+  inserted: function (el) {
+    el.addEventListener('submit', function (e) {
+      e.preventDefault();
+    });
+  }
+});
