@@ -18,7 +18,7 @@
     "bootstrap-vue": "^2.0.0-rc.27",
     "cross-env": "^5.2.0",
     "echart-tree": "^1.0.4",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "koa": "^2.6.2",
     "koa-router": "^7.4.0",
     "koa-session": "^5.12.3",
